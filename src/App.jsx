@@ -8,7 +8,6 @@ import Navbar from "./component/Navbar.jsx";
 import Portfolio from "./pages/Portfolio.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./component/Layout.jsx";
-let title =document.querySelector("#pgtitle").innerHTML
 
 export default function App() {
 

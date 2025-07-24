@@ -1,4 +1,3 @@
-import React from 'react'
 import Star from '../component/Star'
 
 export default function About() {

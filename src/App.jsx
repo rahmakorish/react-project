@@ -1,32 +1,29 @@
-import { useState } from "react";
 import "./App.css";
-import React from "react";
-import Home from "./pages/Home.jsx";
-import About from "./pages/About.jsx";
-import Contact from "./pages/Contact.jsx";
-import Navbar from "./component/Navbar.jsx";
-import Portfolio from "./pages/Portfolio.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Layout from "./component/Layout.jsx";
+import Layout from "./component/Layout";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Portfolio from './component/portfolio';
 
 export default function App() {
-
-    const router = createBrowserRouter([
+  const router = createBrowserRouter([
     {
-        path:"", element: <Layout/>, children:[
-    {path: '/', element:  <Home/>},
-    {path: '/about', element: <About/>},
-    {path: '/contact', element: <Contact/>},
-  {path: '/portfolio', element: <Portfolio/>},
-    {path: '*', element: <Home/>}
-    ]
+      path: "",
+      element: <Layout />,
+      children: [
+        { path: "/", element: <Home /> },
+        { path: "/about", element: <About /> },
+        { path: "/contact", element: <Contact /> },
+        { path: "/portfolio", element: <Portfolio /> },
+        { path: "*", element: <Home /> },
+      ],
     },
-])
+  ]);
 
-return (
+  return (
     <>
-    <RouterProvider router={router}/>
+      <RouterProvider router={router} />
     </>
-);
+  );
 }
-

@@ -1,5 +1,5 @@
 import React from "react";
-import Star from "../component/Star";
+import Star from "./Star";
 
 export default function Portfolio() {
   return (

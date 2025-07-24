@@ -1,0 +1,98 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  font-weight: bolder;
+  text-align: center;
+  background-color: #1ABC9C;
+  color:white;
+}
+
+h1{
+  font-weight: bolder;
+}
+.navbar {
+  right:0px;
+  left:0px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #2C3E50;
+  height:100px;
+  color:white;
+}
+.navbar  .active {
+  background-color: #1ABC9C;
+  border-radius: 4px;
+  border: 5px 10px none;
+  
+}
+.footer-content{
+  background-color: #2C3E50;
+}
+.copyrights{
+  background-color: #1A252F;
+  right:0;
+  left:0;
+  bottom: 0;
+}
+.contact, .portfolio{
+  background-color: white;
+  color:#1A252F;
+}
+.contact .btn{
+  background-color: #1ABC9C;
+  color:white;
+}
+
+.star{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.star::after, .star::before {
+content: "";
+  flex: 1;
+  height: 2px;
+  width:10px;
+  margin: 20px;         
+  background-color: #1A252F;
+  color:white;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+

@@ -4,7 +4,7 @@ import Layout from "./component/Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import Portfolio from './component/portfolio';
+import Portfolio from "./pages/portfolio";
 
 export default function App() {
   const router = createBrowserRouter([
